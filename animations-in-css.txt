@@ -1,0 +1,154 @@
+--------------------------
+12 PRINCIPLES OF ANIMATION
+--------------------------
+1. Squash and stretch
+    Gives a sense of weight and flexibility to objects
+
+
+2. Anticipation
+    Used to prepare the audience for an action, and to make the action appear more realistic
+
+
+3. Staging-Directing focus
+    -> Direct audience attention towards what you want by use of position, lighting, angle (camera).
+
+
+4. Straight Ahead and Pose-to-Pose
+    -> Straight ahead involves animating a sequence from start to finish.
+    -> Pose-to-pose involves drawing the key poses and then animating in-between them afterwards
+
+
+5. Follow-Through & Overlapping Action
+    It pays to follow-through
+    -> Follow-through involves the principles of inertia. Parts of the body or clothing continue to move after action has stopped.
+    -> Overlapping action means that parts of the body move at different times.
+
+
+6. Slow in and slow out
+    Accelerate and slow down
+    -> Let's get up to speed: Objects require time to accelerate and slow down
+    -> More subtle drawings at the beginning and end of an action create this illusion.
+    -> Less drawings in the middle can speed up the action.
+
+
+7. Arc (realistic trajectory)
+    Follow my lead
+    -> Action tends to follow an arched trajectory.
+    -> As an object speeds up the arc flattens in moving ahead and broadens in turns.
+
+
+8. Secondary Action (bringing a scene to life)
+    The Supporting Role
+    -> Gives a scene more life by supporting the main action.
+    -> A character can whistle, fidget or make facial expressions as secondary actions
+    -> It shouldn't take away from the main action.
+
+
+9. Timing (Physics and Emotion)
+    Timing is EVERYTHING
+    -> Correct timing of physical actions makes objects appear to follow the laws of physics.
+    -> Timing is responsible for a characters mood, emotion, reaction and even personality.
+
+
+10. Exaggeration (defining
+    Used to establish a level of realism in the animation
+    -> The more exaggerated the movement the more "cartoon-ish" the animation.
+    -> Disney employed restraint. Characters are real in form, but have a more extreme level of movement.
+
+
+11. Solid Drawing
+    Practice Makes Perfect
+    -> Animators need to understand the basics of shape, anatomy, weight, balance, light and shadow.
+
+
+12. Appeal
+    Make an Impression
+    -> Appeal is like charisma in an actor
+    -> This applies to both the "good" and the "bad"
+
+
+--------------------------
+INTRO TO ANIMATION IN CSS
+--------------------------
+
+Animation helps us create more pleasant experiences for the user
+-Decrease cognitive load
+    -> State changes become more natural, easy-to-follow.
+    -> Reduces "change blindness"
+-Create feedback
+    -> Signals to a user that something is happening in response to their action.
+-Directs Attn
+    -> The user's eye will follow the animation, allowing for attention to be directed towards the intended focal point.
+-Bring Delight
+    -> Playful animations can create lasting emotional impact
+
+3 RULES TO FOLLOW
+    -> Keep it SHORT, SIMPLE, & MEANINGFUL
+
+
+@keyframes myAnimation {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+
+ANIMATION PROPERTY
+
+.my-class {
+    animation-name: myAnimation;
+    animation-duration: ;
+/*    How long animation will run for*/
+    animation-timing-function: ;
+/*    Defines how the animation progresses through the duration given. There are a number of diff. functions we can apply*/
+/*    TIMING FUNCTION*/
+    /*linear -> Constant speed through the entire animation*/
+
+    /*easing -> This corresponds to "slow in, slow out" ease-in slowly accelearates, ease-out slows down at the end and ease-in-out applies both*/
+
+
+    /*step -> Cuts an animation up into n steps, which defines the # of frames to be played over teh duration*/
+
+    /*cubic-bezier -> this is an author defined "easing" function. Four points P0, P1, P2, P3. P0 and P3 define the start and finish of the curve with P1 and P2*/
+
+    animation-iteration-count: ;
+/*    How many times to loop the animation*/
+    animation-direction: ; /* Play animation forward or in revers or alternate between the 2 directions*/
+    animation-fill-mode: ; /*How the animation applies before and/or anfter the animation has finished running */
+    animation-play-state: ; /*play or pause animation */
+
+}
+
+
+ROTATE (3D)
+- Rotates an element clockwise around from its original position. Negative values will rotate counterclockwise.
+
+TRANSLATE (3D)
+- Reposition an element horizontally and/or vertically. There is also a 3D option to additionally reposition along the z-axis.
+- You can use any sizing units in your values
+
+SCALE (3D)
+-Resizes an element across a 2D/3D plane. It uses a vector, so x, y and z axes can be scaled differently.
+
+SKEW
+-Distorts each point in an element horizontally and vertically by the specifies angle.
+
+PERSPECTIVE
+- The distance between the view and the z=0 plane.
+- Doesn't affect the element itself but instead the transforms of the descendent
+
+
+MATRIX (3D)
+- Defines a 3D transform over a 4X4 grid with values going top to bottom and left to right. The 2D version fixes the z positional values to 0;
+- This is basically combining all the other transformations into one as a sort of "shorthand" syntax. Not very user friendly.
+
+OFFSET-PATH
+- Creates a path for an element to follow
+- Path can be defined as any SVG basic shape, or any
+
+
+ANIMATION FOR EVERYONE
