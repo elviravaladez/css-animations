@@ -97,8 +97,7 @@ Animation helps us create more pleasant experiences for the user
 }
 
 
-ANIMATION PROPERTY
-
+ANIMATION PROPERTIES
 .my-class {
     animation-name: myAnimation;
     animation-duration: ;
